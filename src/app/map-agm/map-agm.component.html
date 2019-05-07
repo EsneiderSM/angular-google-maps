@@ -1,0 +1,8 @@
+<div class="form-group">
+  <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text"
+    class="form-control" #search [formControl]="searchControl">
+</div>
+<br>
+<agm-map [latitude]="coordinates.latitude" [longitude]="coordinates.longitude" [zoom]="zoomMap">
+  <agm-marker [latitude]="coordinates.latitude" [longitude]="coordinates.longitude"></agm-marker>
+</agm-map>

@@ -1,17 +1,1 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-
-<div class="form-group">
-  <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text"
-    class="form-control" #search [formControl]="searchControl">
-</div>
-
-<agm-map [latitude]="coordinates.latitude" [longitude]="coordinates.longitude" [zoom]="zoomMap">
-  <agm-marker [latitude]="coordinates.latitude" [longitude]="coordinates.longitude"></agm-marker>
-</agm-map>
-
 <router-outlet></router-outlet>
